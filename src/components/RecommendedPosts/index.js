@@ -1,18 +1,12 @@
 import React from "react"
 import propTypes from "prop-types"
 
-import getThemeColor from "../../utils/getThemeColor"
-
 import * as S from "./styled"
 
 const RecommendedPosts = ({ next, previous }) => (
     <S.RecommendedWrapper>
         {previous && (
             <S.RecommendedLink
-                cover
-                direction="left"
-                bg={getThemeColor()}
-                duration={0.8}
                 to={previous.fields.slug}
                 className="previous"
             >
@@ -21,10 +15,6 @@ const RecommendedPosts = ({ next, previous }) => (
         )}
         {next && (
             <S.RecommendedLink
-                cover
-                direction="right"
-                bg={getThemeColor()}
-                duration={0.8}
                 to={next.fields.slug}
                 className="next"
             >

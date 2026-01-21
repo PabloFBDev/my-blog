@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+import { Link } from "gatsby"
 
 import transitions from './transitions'
 
@@ -52,7 +52,7 @@ export const PostDate = styled.p`
   `}
 `
 
-export const ButtonBack = styled(AniLink)`
+export const ButtonBack = styled(Link)`
   color: var(--texts);
   display: flex;
   text-decoration: none;

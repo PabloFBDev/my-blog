@@ -5,8 +5,6 @@ import Layout from "../components/Layout"
 import Seo from "../components/seo"
 import RecommendedPost from "../components/RecommendedPosts"
 
-import getThemeColor from "../utils/getThemeColor"
-
 import {
   PostHeader,
   PostTitle,
@@ -29,13 +27,7 @@ const BlogPost = props => {
         image={post.frontmatter.image}
       />
       <PostHeader>
-        <ButtonBack
-          to="/"
-          cover
-          direction="left"
-          bg={getThemeColor()}
-          duration={0.8}
-        >
+        <ButtonBack to="/">
           ← Voltar na listagem
         </ButtonBack>
 
